@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders email with preview 1`] = `
+"<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Transitional//EN\\" \\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\\">
+<html xmlns=\\"http://www.w3.org/1999/xhtml\\">
+  <head>
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=UTF-8\\" />
+    <title>Welcome</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body style=\\"margin:0;padding:0;box-sizing:border-box;background-color:white\\">
+    <div style=\\"display:none;max-height:0;overflow:hidden\\">Confirm your email.</div>
+    <div style=\\"display:none;max-height:0;overflow:hidden\\"> ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+       ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ </div>
+    <table data-component=\\"body\\" border=\\"0\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%;height:100%;background-color:white\\">
+      <tr style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%\\">
+        <td align=\\"center\\" valign=\\"top\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%;word-wrap:break-word;font-size:16px;line-height:1.3;color:#0a0a0a;font-family:&quot;Circular&quot;,Helvetica,Arial,sans-serif;font-weight:normal\\">
+          <center style=\\"width:100%;min-width:580px\\">Welcome!</center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>"
+`;
+
+exports[`renders email with title 1`] = `
+"<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Transitional//EN\\" \\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\\">
+<html xmlns=\\"http://www.w3.org/1999/xhtml\\">
+  <head>
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=UTF-8\\" />
+    <title>Welcome</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body style=\\"margin:0;padding:0;box-sizing:border-box;background-color:white\\">
+    <table data-component=\\"body\\" border=\\"0\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%;height:100%;background-color:white\\">
+      <tr style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%\\">
+        <td align=\\"center\\" valign=\\"top\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%;word-wrap:break-word;font-size:16px;line-height:1.3;color:#0a0a0a;font-family:&quot;Circular&quot;,Helvetica,Arial,sans-serif;font-weight:normal\\">
+          <center style=\\"width:100%;min-width:580px\\">Welcome!</center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>"
+`;
