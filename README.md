@@ -8,20 +8,42 @@
 
 Create compatible emails in different email clients using React and render them to HTML with ease to be sent later with your preferred email service on Node.js
 
-You can render the same email on the browser without render it to HTML, just using React!
+Check the [use cases](#use-cases) section and know in detail what you can do with this library.
 
 ### The problem
 
-Writing emails is hard due to compatibility issues on email clients, but it is even harder when you are limited to only use primitive HTML tags and a few CSS properties only.
+Writing emails is hard due to compatibility issues with email clients, but it is even harder when you are limited to only use primitive HTML tags and a few CSS properties only.
 
-In order to solve the problem previously mentioned, there are some good libraries out there ([MJM](https://mjml.io/) or [HEML](https://heml.io/) among others) which aim to combate this problem.
-Even using these libraries (and other) in some cases I got frustated and I didn't feel comfortable enough due to new syntax and rules, reusability, composability and poor (or none) about templates variables, etc.
+In order to solve the problem previously mentioned, there are some good libraries out there ([MJM](https://mjml.io/) or [HEML](https://heml.io/) among others) which aim to combat this problem.
+Even using these libraries (and other) in some cases I got frustrated and I didn't feel comfortable enough due to new syntax and rules and poor support (or none) about templates variables and many more things.
 
 ### The solution
 
-What it would happen if we use a familiar syntax, emails components-based, template rendering by default among other cool things, keeping of course an elegant structure, simple and clean. So... Where is the solution to this? Using React and JSX. Of course, if the project is already using React, you have more reasons to use this library.
+What it would happen if we use a familiar syntax, emails components-based, template rendering by default among other cool things, keeping, of course, an elegant structure, simple and clean. So... Where is the solution to this? Using React and JSX. Of course, if the project is already using React, you have more reasons to use this library.
 
 React is used to build web apps, iOS apps, Android apps, macOS apps, Windows apps, Linux apps, VR apps, TV apps, and many more things! Why not use React to build powerful and awesome emails with support for different email clients by default?
+
+## Use cases
+
+#### Sending emails from Node.js
+
+This is the most frequent use case for this library. You can send transactional and marketing emails using your own email templates built with the built-in components from this library.
+
+#### Online email version
+
+You can render the same email on the browser in order to make an online version of the email in case the user can't visualize the email good on his/her email client. This is the famous link saying "View email on the browser" or similar.
+
+#### Live email editor
+
+You can create a live editor to visualize how marketing emails look like with some real data before sending it to thousands of users.
+
+#### Testing emails
+
+You can test your emails! You could want to use Jest to test all your emails with snapshots.
+
+#### Creating a UI for emails
+
+Emails are presentational components, so you can have all your emails very well organized with tools like [Storybook](https://storybook.js.org/) or [React Styleguidist](https://react-styleguidist.js.org/).
 
 ## Installation
 
@@ -57,6 +79,7 @@ const user = {
 sendEmail({
   from: "hello@acme.com",
   to: user.email,
+  subject: `Welcome to Acme`,
   // Render to HTML pretty easy
   html: renderToHtml(<NewUserWelcomeEmail firstName={user.firstName} />)
 });
@@ -66,9 +89,9 @@ sendEmail({
 
 You could build all these components by yourself, but the main idea here is to make things easier so you can focus on things really matter.
 
-All the components listed here have been built with compatibility in mind for emails. You can wrap them and build your owns to safely renders awesome emails on different email clients.
+All the components listed here have been built with compatibility in mind for emails. You can wrap them and build your own components to safely renders awesome emails on different email clients.
 
-If you use this components, you won't have to worry about anything since one of the main purposes of this library is to offer as much compatibility as possible under the hood by default.
+If you use these components, you won't have to worry about anything since one of the main purposes of this library is to offer as much compatibility as possible under the hood by default.
 
 ### Email
 
@@ -104,7 +127,26 @@ Row.propTypes = {
 
 ### Column
 
-This is a column whichs can have a specific width.
+This is a column which can have a specific width. I recommend using 4 columns like maximum for a given row. It is preferred to use only 2 or 3.
+
+There are 12 column widths. This is similar to Bootstrap grid. If you don't specify any width, it will be 12 by default which means 100%.
+
+```js
+const widths = {
+  "1": `${1 * 100 / 12}%`,
+  "2": `${2 * 100 / 12}%`,
+  "3": `${3 * 100 / 12}%`,
+  "4": `${4 * 100 / 12}%`,
+  "5": `${5 * 100 / 12}%`,
+  "6": `${6 * 100 / 12}%`,
+  "7": `${7 * 100 / 12}%`,
+  "8": `${8 * 100 / 12}%`,
+  "9": `${9 * 100 / 12}%`,
+  "10": `${10 * 100 / 12}%`,
+  "11": `${11 * 100 / 12}%`,
+  "12": `${12 * 100 / 12}%`
+};
+```
 
 ```js
 Column.defaultProps = {
@@ -129,10 +171,10 @@ Box.propTypes = {
 
 ### Text
 
-Use `Text` for all the texts. You can use this component to build your owns such as `Heading`, `Paragraph` and so on. Just pass down some styles and it will be ready to go!
+Use `Text` for all the texts. You can use this component to build your own components such as `Heading`, `Paragraph` and so on. Just pass down some styles and it will be ready to go!
 
 ```js
-Text.PropTypes = {
+Text.propTypes = {
   children: PropTypes.any.isRequired
 };
 ```
@@ -150,7 +192,7 @@ Image.propTypes = {
 
 ### Link
 
-Use `Link` for your basic links with or withour underline. You can use this component as a foundation to build you own components such as buttons. Give it some styles and it will be ready to go!
+Use `Link` for your basic links with or without underline. You can use this component as a foundation to build your own components such as buttons. Give it some styles and it will be ready to go!
 
 ```js
 Link.propTypes = {
