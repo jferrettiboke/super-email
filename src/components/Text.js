@@ -12,7 +12,7 @@ const Text = ({ style, ...rest }) => (
   />
 );
 
-Text.PropTypes = {
+Text.propTypes = {
   children: PropTypes.any.isRequired
 };
 
