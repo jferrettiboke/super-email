@@ -1,29 +1,23 @@
 {
   "name": "super-email",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Use JSX and React for rendering your emails with ease!",
   "main": "lib/index.js",
   "repository": "https://github.com/jferrettiboke/super-email.git",
   "author": "Jesús Ferretti <jferrettiboke@gmail.com>",
   "license": "MIT",
-  "keywords": [
-    "email",
-    "template",
-    "render",
-    "react",
-    "jsx",
-    "node"
-  ],
+  "keywords": ["email", "template", "render", "react", "jsx", "node"],
   "scripts": {
     "build": "parcel build src/index.js --out-dir lib --target node",
-    "publish": "npm run build && npm publish",
     "test": "jest --env=node",
     "test:watch": "jest --watchAll --env=node"
   },
   "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "prop-types": "^15.6.1"
+  },
+  "peerDependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
