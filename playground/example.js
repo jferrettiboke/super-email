@@ -3,8 +3,8 @@ const Wrapper = ({ children }) => (
   <Box
     style={{
       margin: "20px 0",
-      "-webkit-font-smoothing": "antialiased",
-      "-moz-osx-font-smoothing": "grayscale"
+      WebkitFontSmoothing: "antialiased",
+      MozOsxFontSmoothing: "grayscale"
     }}
   >
     <Container>{children}</Container>
@@ -16,6 +16,7 @@ const Header = () => (
     <Row>
       <Column>
         <Link
+          href="https://www.example.com"
           style={{
             fontFamily:
               "Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif",
@@ -67,9 +68,9 @@ const Layout = ({ children }) => (
   </Wrapper>
 );
 
-const Button = ({ children }) => (
+const Button = props => (
   <Link
-    href="/"
+    {...props}
     style={{
       backgroundColor: "black",
       color: "white",
@@ -79,9 +80,7 @@ const Button = ({ children }) => (
       fontSize: 14,
       fontWeight: "bold"
     }}
-  >
-    {children}
-  </Link>
+  />
 );
 
 const Spacing = ({ children }) => <Box style={{ marginBottom: 25 }} />;
@@ -109,7 +108,7 @@ const WelcomeUserEmail = ({ firstName }) => (
 
       <Row>
         <Column>
-          <Button>Let's get started</Button>
+          <Button href="https://www.example.com">Let's get started</Button>
         </Column>
       </Row>
     </Layout>
