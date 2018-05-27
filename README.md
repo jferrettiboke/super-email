@@ -47,7 +47,7 @@ Emails are presentational components, so you can have all your emails very well 
 
 ## Installation
 
-`npm install --save super-email` or `yarn add super-email`.
+`npm install --save super-email react react-dom` or `yarn add super-email react react-dom`.
 
 ## Usage
 
