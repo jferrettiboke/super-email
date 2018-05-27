@@ -2,32 +2,30 @@
 
 exports[`renders successfully 1`] = `
 "<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Transitional//EN\\" \\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\\">
-<html xmlns=\\"http://www.w3.org/1999/xhtml\\">
+<html xmlns=\\"http://www.w3.org/1999/xhtml\\" style=\\"margin: 0; padding: 0; border: none; box-sizing: border-box;\\">
   <head>
-    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
-    <meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=UTF-8\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">
+    <meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=UTF-8\\">
     <title>Welcome</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        border: none;
-        box-sizing: border-box;
-      }
-    </style>
   </head>
-  <body style=\\"margin:0;padding:0;box-sizing:border-box;background-color:white\\">
-    <table data-component=\\"body\\" border=\\"0\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%;height:100%;background-color:white\\">
-      <tr style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%\\">
-        <td align=\\"center\\" valign=\\"top\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%;word-wrap:break-word;font-size:16px;line-height:1.3;color:#0a0a0a;font-family:&quot;Circular&quot;,Helvetica,Arial,sans-serif;font-weight:normal\\">
-          <center style=\\"width:100%;min-width:580px\\">
-            <table data-component=\\"container\\" border=\\"0\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" style=\\"margin:0 auto;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:580px;max-width:580px\\">
-              <tr style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%\\">
-                <td style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%\\">
-                  <table data-component=\\"row\\" border=\\"0\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%;display:table\\">
-                    <tr style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:100%\\">
-                      <td data-component=\\"column\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:50%;margin-top:0;margin-bottom:0;margin-left:auto;margin-right:auto;padding-top:0;padding-bottom:0;padding-left:15px;padding-right:15px\\">Column 1</td>
-                      <td data-component=\\"column\\" style=\\"margin:0;padding:0;border:none;border-spacing:0;border-collapse:collapse;vertical-align:top;width:50%;margin-top:0;margin-bottom:0;margin-left:auto;margin-right:auto;padding-top:0;padding-bottom:0;padding-left:15px;padding-right:15px\\">Column 2</td>
+  <body style=\\"border: none; margin: 0; padding: 0; box-sizing: border-box; background-color: white;\\">
+    <table data-component=\\"body\\" border=\\"0\\" cellpadding=\\"0\\" cellspacing=\\"0\\" style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%; height: 100%; background-color: white;\\"
+      width=\\"100%\\" height=\\"100%\\" valign=\\"top\\" bgcolor=\\"white\\">
+      <tr style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%;\\" valign=\\"top\\">
+        <td align=\\"center\\" valign=\\"top\\" style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%; word-wrap: break-word; font-size: 16px; line-height: 1.3; color: #0a0a0a; font-weight: normal;\\"
+          width=\\"100%\\">
+          <center style=\\"margin: 0; padding: 0; border: none; box-sizing: border-box; width: 100%;\\">
+            <table data-component=\\"container\\" border=\\"0\\" cellpadding=\\"0\\" cellspacing=\\"0\\" style=\\"box-sizing: border-box; margin: 0 auto; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%; max-width: 580px;\\"
+              width=\\"100%\\" valign=\\"top\\">
+              <tr style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%;\\" valign=\\"top\\">
+                <td style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%;\\" width=\\"100%\\" valign=\\"top\\">
+                  <table data-component=\\"row\\" border=\\"0\\" cellpadding=\\"0\\" cellspacing=\\"0\\" style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%; display: table;\\"
+                    width=\\"100%\\" valign=\\"top\\">
+                    <tr style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 100%;\\" valign=\\"top\\">
+                      <td data-component=\\"column\\" style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 50%; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; padding-top: 0; padding-bottom: 0; padding-left: 15px; padding-right: 15px;\\"
+                        width=\\"50%\\" valign=\\"top\\">Column 1</td>
+                      <td data-component=\\"column\\" style=\\"box-sizing: border-box; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse; vertical-align: top; width: 50%; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; padding-top: 0; padding-bottom: 0; padding-left: 15px; padding-right: 15px;\\"
+                        width=\\"50%\\" valign=\\"top\\">Column 2</td>
                     </tr>
                   </table>
                 </td>

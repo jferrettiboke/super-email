@@ -23,11 +23,10 @@ const Body = ({ children }) => (
           fontSize: 16,
           lineHeight: "1.3",
           color: "#0a0a0a",
-          fontFamily: '"Circular",Helvetica,Arial,sans-serif',
           fontWeight: "normal"
         }}
       >
-        <center style={{ width: "100%", minWidth: 580 }}>{children}</center>
+        <center style={{ width: "100%" }}>{children}</center>
       </Td>
     </Tr>
   </Table>

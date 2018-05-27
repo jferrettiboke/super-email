@@ -9,7 +9,7 @@ const Container = ({ style, children }) => (
   <Table
     data-component="container"
     style={{
-      width: 580,
+      width: "100%",
       maxWidth: 580,
       margin: "0 auto",
       ...style
